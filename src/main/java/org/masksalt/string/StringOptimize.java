@@ -26,10 +26,14 @@ public class StringOptimize {
     }
 
 
-    public void strSplit() {
+    public static void strSplit() {
         String string = "a;b,c:d";
         String[] strArr = string.split("[;|,|;]");
+        System.out.println(strArr);
+    }
 
+    public static void main(String[] args) {
+        strSplit();
     }
 
 }
