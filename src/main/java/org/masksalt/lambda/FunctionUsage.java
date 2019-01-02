@@ -30,6 +30,7 @@ public class FunctionUsage {
 
 
     static class Util {
+
         public static Predicate<Integer> preFunc() {
             Predicate<Integer> check = (Integer number) -> number % 2 != 0;
             return check;
