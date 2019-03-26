@@ -1,4 +1,4 @@
-package org.masksalt.collection;
+package org.strelitzia.collection;
 
 import java.util.Iterator;
 import java.util.LinkedList;

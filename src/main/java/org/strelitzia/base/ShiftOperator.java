@@ -1,4 +1,4 @@
-package org.masksalt.base;
+package org.strelitzia.base;
 
 /**
  * java移位运算符

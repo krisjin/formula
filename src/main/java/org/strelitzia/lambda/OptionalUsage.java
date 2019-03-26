@@ -1,6 +1,6 @@
-package org.masksalt.lambda;
+package org.strelitzia.lambda;
 
-import org.masksalt.lambda.domain.OrderDomain;
+import org.strelitzia.lambda.domain.OrderDomain;
 
 import java.io.BufferedReader;
 import java.io.IOException;

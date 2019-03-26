@@ -1,4 +1,4 @@
-package org.masksalt.lambda.domain;
+package org.strelitzia.lambda.domain;
 
 
 import lombok.Getter;

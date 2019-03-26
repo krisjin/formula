@@ -1,4 +1,4 @@
-package org.masksalt.domain;
+package org.strelitzia.domain;
 
 /**
  * User: shijingui

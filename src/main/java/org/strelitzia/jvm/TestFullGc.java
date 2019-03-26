@@ -1,6 +1,6 @@
-package org.masksalt.jvm;
+package org.strelitzia.jvm;
 
-import org.masksalt.domain.MemoryObject;
+import org.strelitzia.domain.MemoryObject;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package org.masksalt.base.timer;
+package org.strelitzia.base.timer;
 
 import java.util.Timer;
 

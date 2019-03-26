@@ -1,4 +1,4 @@
-package org.masksalt.concurrent;
+package org.strelitzia.concurrent;
 
 import java.util.concurrent.ConcurrentHashMap;
 

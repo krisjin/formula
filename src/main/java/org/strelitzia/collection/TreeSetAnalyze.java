@@ -1,4 +1,4 @@
-package org.masksalt.collection;
+package org.strelitzia.collection;
 
 /**
  * TreeSet和HashSet的主要不同之处在于TreeSet对排序的支持，TreeSet基于TreeMap实现

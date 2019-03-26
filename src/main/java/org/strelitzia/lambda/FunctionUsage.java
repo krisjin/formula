@@ -1,4 +1,4 @@
-package org.masksalt.lambda;
+package org.strelitzia.lambda;
 
 import java.util.Arrays;
 import java.util.List;

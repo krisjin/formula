@@ -1,4 +1,4 @@
-package org.masksalt.collection;
+package org.strelitzia.collection;
 
 /**
  * HashSet是Set接口实现，Set和List最明显的区别在于Set不允许元素重复，而List允许。Set为了做到不允许元素重复，采用的是基于HashMap

@@ -1,4 +1,4 @@
-package org.masksalt.string;
+package org.strelitzia.string;
 
 /**
  * @author shijingui on 2017/3/31

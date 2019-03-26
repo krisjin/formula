@@ -1,4 +1,4 @@
-package org.masksalt;
+package org.strelitzia;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
