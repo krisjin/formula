@@ -14,7 +14,7 @@ import java.util.LinkedList;
  * 3.LinkedList是非线程安全的。
  * <p/>
  * <p/>
- * User: shijingui
+ * User: krisibm@163.com
  * Date: 2016/10/22
  */
 public class LinkedListAnalyze {

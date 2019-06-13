@@ -5,7 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 /**
- * User:shijingui
+ * User:krisibm@163.com
  * Date:2018/12/30
  *  
  */

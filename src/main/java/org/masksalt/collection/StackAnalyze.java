@@ -9,7 +9,7 @@ import java.util.Stack;
  * pop通过peek来获取元素，并同时删除数组的最后一个元素。
  * peek操作通过获取当前Object数组的大小，并获取数组上的最后一元素
  * <p/>
- * User: shijingui
+ * User: krisibm@163.com
  * Date: 2016/10/23
  */
 public class StackAnalyze {

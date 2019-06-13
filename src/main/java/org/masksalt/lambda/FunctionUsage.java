@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.function.Predicate;
 
 /**
- * User:shijingui
+ * User:krisibm@163.com
  * Date:2018/12/30
  *  
  */
