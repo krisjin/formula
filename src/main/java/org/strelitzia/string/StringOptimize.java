@@ -1,7 +1,7 @@
 package org.strelitzia.string;
 
 /**
- * @author shijingui on 2017/3/31
+ * @author krisibm@163.com on 2017/3/31
  */
 public class StringOptimize {
 

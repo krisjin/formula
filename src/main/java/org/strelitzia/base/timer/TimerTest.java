@@ -3,7 +3,7 @@ package org.strelitzia.base.timer;
 import java.util.Timer;
 
 /**
- * User: shijingui
+ * User: krisibm@163.com
  * Date: 2016/10/24
  */
 public class TimerTest {

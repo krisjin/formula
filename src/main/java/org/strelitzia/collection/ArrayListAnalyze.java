@@ -13,7 +13,7 @@ import java.util.List;
  * 3.ArrayList是非线程安全的。
  *
  * @see java.util.List
- * User: shijingui
+ * User: krisibm@163.com
  * Date: 2016/10/19
  */
 public class ArrayListAnalyze {
