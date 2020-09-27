@@ -10,7 +10,6 @@ public class STWByGC {
     public static class SampleThread implements Runnable {
         HashMap map = new HashMap<>();
 
-        @Override
         public void run() {
             try {
                 while (true) {
@@ -20,12 +19,10 @@ public class STWByGC {
                     byte[] bytes;
                     for (int i = 0; i < 100; i++) {
                         bytes = new byte[512];
-
                         map.put(System.nanoTime(), bytes);
                     }
                     Thread.sleep(1);
                 }
-
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -35,16 +32,13 @@ public class STWByGC {
     public static class PrintTimeThread implements Runnable {
         public static final long st = System.currentTimeMillis();
 
-        @Override
         public void run() {
             try {
                 while (true) {
                     long end = System.currentTimeMillis() - st;
-
                     System.out.println(end / 1000 + " ." + end % 1000);
                     Thread.sleep(100);
                 }
-
             } catch (Exception e) {
 
             }
