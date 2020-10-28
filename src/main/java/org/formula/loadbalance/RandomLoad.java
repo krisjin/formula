@@ -7,8 +7,6 @@ import java.util.*;
  */
 public class RandomLoad {
     static Map<String, Integer> serverWeightMap = new HashMap<String, Integer>();
-    static int randomSize = serverWeightMap.size();
-
     static {
         serverWeightMap.put("192.168.1.100", 1);
         serverWeightMap.put("192.168.1.101", 1);
@@ -23,6 +21,7 @@ public class RandomLoad {
         for (int i = 1; i < 10000; i++) {
             String ip = getIp();
             Integer count = serverCount.get(ip);
+
             if (count == null) {
                 serverCount.put(ip, 1);
             } else {
