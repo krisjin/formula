@@ -1,12 +1,40 @@
+## NIO-
 
+
+
+buffer本质上就是一块内存区，可以用来写入数据，读取数据。这块内存被NIO Buffer包裹起来，对外提供一系列的读写方便开发的接口。
+
+
+
+下图是NIO 中提供的buffer的具体实现，为什么不在一个类中实现啊，又跳跃了...
+
+让我想到了，DTO、DO、VO、BO....
+
+
+
+![图片](https://mmbiz.qpic.cn/mmbiz_png/PNzW2yzfW9k8scDv4J9dAfKdqicQq5Azu5nbgHuicfWT1ZgicRkurlqbicGstPicuJ5dDPrRIGQLicXtuxtYBoJAFIxQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
+
+
+
+
+
+下面这个张图描述了Buffer提供的常用的方法，方便操作缓冲数组中的数据，与NIO中的Channel进行完美的配合。
+
+![图片](https://mmbiz.qpic.cn/mmbiz_png/PNzW2yzfW9k8scDv4J9dAfKdqicQq5AzuGDsBWId2tSbaa6KiaficGkjYmUK4ky9lliczPFCp3xzOaQiaNNGGjbvq9w/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
+
+
+
+
+
+
+
+**示例代码**
 
 
 
 
 
 #### 有哪些属性
-
-
 
 
 
@@ -74,4 +102,6 @@ java.nio.Buffer类是一个抽象类，不能被实例化。Buffer类的直接�
 
 
 https://www.cnblogs.com/JAYIT/p/8384476.html
+
+http://ifeve.com/buffers/
 
