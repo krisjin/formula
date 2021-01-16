@@ -11,7 +11,6 @@ buffer本质上就是一块内存区，可以用来写入数据，读取数据�
 让我想到了，DTO、DO、VO、BO....
 
 
-
 ![图片](https://mmbiz.qpic.cn/mmbiz_png/PNzW2yzfW9k8scDv4J9dAfKdqicQq5Azu5nbgHuicfWT1ZgicRkurlqbicGstPicuJ5dDPrRIGQLicXtuxtYBoJAFIxQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
 
 
@@ -97,9 +96,9 @@ java.nio.Buffer类是一个抽象类，不能被实例化。Buffer类的直接�
 
 ### 参考资料
 
+治理应用复杂度，降低系统熵值
 
-
-
+都遵循一些共同模式
 
 https://www.cnblogs.com/JAYIT/p/8384476.html
 
