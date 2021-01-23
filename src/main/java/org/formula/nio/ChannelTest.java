@@ -1,6 +1,8 @@
 package org.formula.nio;
 
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
@@ -13,27 +15,71 @@ import java.nio.charset.Charset;
 public class ChannelTest {
 
     public static void main(String[] args) {
-        channelTest();
+//        fileChannelTest();
+        writeTest();
     }
 
-    public static void channelTest() {
-        RandomAccessFile raf = null;
+
+    public static void writeTest() {
+        FileOutputStream fos = null;
         try {
-//            String t = "666666\n";
-            //创建一个RandomAccessFile（随机访问文件）对象，
-            raf = new RandomAccessFile("/usr/local/tools/a.txt", "rw");
+            fos = new FileOutputStream("/usr/local/tools/b.txt");
+            ByteBuffer buffer1 = ByteBuffer.wrap("abcdef".getBytes("UTF-8"));
+            ByteBuffer buffer2 = ByteBuffer.wrap("123456".getBytes("UTF-8"));
 
-            //通过RandomAccessFile对象的getChannel()方法。FileChannel是抽象类。
-            FileChannel inChannel = raf.getChannel();
-            ByteBuffer byteBuffer = ByteBuffer.allocate(100);
+            FileChannel fileChannel = fos.getChannel();
 
-            for (int i = 0; i < 30; i++) {
-                byteBuffer.put((i + "").getBytes("UTF-8"));
+            fileChannel.write(buffer1);
+
+            buffer2.position(3);
+            buffer2.limit(5);
+
+            fileChannel.position(3);
+            fileChannel.write(buffer2);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                fos.close();
+            } catch (IOException e) {
+                e.printStackTrace();
             }
+        }
 
-//            byteBuffer.put(t.getBytes("UTF-8"));
-            byteBuffer.flip();
-            inChannel.write(byteBuffer);
+
+    }
+
+    public static void fileChannelTest() {
+        try {
+
+            //创建一个RandomAccessFile对象，传入一个文件路径，支持读写模式
+            RandomAccessFile raf = new RandomAccessFile("/usr/local/tools/a.txt", "rw");
+
+            //获取文件通道
+            FileChannel fileChannel = raf.getChannel();
+
+            //创建字节缓冲区，用于读取数据和写入数据
+            ByteBuffer buffer = ByteBuffer.allocate(48);
+            fileChannel.read(buffer);
+            buffer.flip();
+
+            while (buffer.hasRemaining()) {
+//                System.err.println(buffer.getChar());
+
+                String str = new String(buffer.array(), buffer.position(), buffer.limit(), "utf-8");
+                System.err.println(str);
+                buffer.clear();
+            }
+//            fileChannel.read(buffer);
+
+
+//            for (int i = 0; i < 30; i++) {
+//                buffer.put((i + "").getBytes("UTF-8"));
+//            }
+//
+////            buffer.put(t.getBytes("UTF-8"));
+
+//            fileChannel.write(buffer);
 
         } catch (Exception e) {
             e.printStackTrace();
