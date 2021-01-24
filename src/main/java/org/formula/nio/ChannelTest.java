@@ -15,8 +15,8 @@ import java.nio.charset.Charset;
 public class ChannelTest {
 
     public static void main(String[] args) {
-//        fileChannelTest();
-        writeTest();
+        fileChannelTest();
+//        writeTest();
     }
 
 
@@ -45,45 +45,45 @@ public class ChannelTest {
                 e.printStackTrace();
             }
         }
-
-
     }
 
     public static void fileChannelTest() {
+        RandomAccessFile raf = null;
+        FileChannel fileChannel = null;
         try {
-
+            raf = new RandomAccessFile("/usr/local/tools/a.txt", "rw");
             //创建一个RandomAccessFile对象，传入一个文件路径，支持读写模式
-            RandomAccessFile raf = new RandomAccessFile("/usr/local/tools/a.txt", "rw");
 
             //获取文件通道
-            FileChannel fileChannel = raf.getChannel();
+            fileChannel = raf.getChannel();
 
             //创建字节缓冲区，用于读取数据和写入数据
             ByteBuffer buffer = ByteBuffer.allocate(48);
-            fileChannel.read(buffer);
-            buffer.flip();
 
-            while (buffer.hasRemaining()) {
-//                System.err.println(buffer.getChar());
-
+            //从文件读取输出控制台
+            while (fileChannel.read(buffer) != -1) {
+                buffer.flip();
                 String str = new String(buffer.array(), buffer.position(), buffer.limit(), "utf-8");
-                System.err.println(str);
+                System.err.print(str);
                 buffer.clear();
             }
-//            fileChannel.read(buffer);
 
-
-//            for (int i = 0; i < 30; i++) {
-//                buffer.put((i + "").getBytes("UTF-8"));
-//            }
-//
-////            buffer.put(t.getBytes("UTF-8"));
-
-//            fileChannel.write(buffer);
+            //写数据
+            buffer.put("\n新信息！！!".getBytes("UTF-8"));
+            //切换读模式
+            buffer.flip();
+            //通道写数据
+            fileChannel.write(buffer);
 
         } catch (Exception e) {
             e.printStackTrace();
+        } finally {
+            try {
+                raf.close();
+                fileChannel.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
-
     }
 }
