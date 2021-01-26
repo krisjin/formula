@@ -17,7 +17,6 @@ public class SocketChannelTest {
 
     }
 
-
     public static void socketChannel() throws IOException {
         //获得一个通道
         SocketChannel socketChannel = SocketChannel.open();
