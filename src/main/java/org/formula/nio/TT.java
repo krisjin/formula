@@ -9,14 +9,13 @@ import java.util.Random;
 public class TT {
 
     public static void main(String[] args) {
-
+    t();
     }
 
-    public static void t(String[] args) {
+    public static void t() {
         Random rnd = new Random();
         boolean toBe = rnd.nextBoolean();
-        Number result = (toBe || !toBe) ?
-                new Integer(3) : new Float(1);
+        Number result = (toBe || !toBe) ?  new Integer(3) : new Float(1);
         System.out.println(result);
     }
 }

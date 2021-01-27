@@ -14,7 +14,6 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-@Slf4j
 public class NioReceiveServer {
 
     //接受文件路径

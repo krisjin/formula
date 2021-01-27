@@ -14,12 +14,7 @@ public class Test {
      *                               doesn't represent a valid integer
      */
     public static Integer parseInt(String s) {
-
-
-
-
-
-        return (s == null) ?   null : Integer.parseInt(s);
+        return (s == null) ? (Integer) null : 1133;
 
     }
 
@@ -29,11 +24,23 @@ public class Test {
 
 //        System.out.println(parseInt("-1") + " " + parseInt(null) + " " + parseInt("1"));
 //        System.out.println(parseInt("-1") + " " + parseInt(null) + " " + parseInt("1"));
+//        t1();
     }
 
 
+    public static void t1() {
+        Object s = null;
+        Integer i = (Integer) s;
+
+//        Integer dd = Integer.parseInt(null);
+
+        if (s == null) {
+            Integer aa = (Integer) s;
+            System.err.println(aa);
+        }
 
 
+    }
 
 
 }
