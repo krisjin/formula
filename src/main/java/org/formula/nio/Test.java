@@ -20,8 +20,8 @@ public class Test {
 
     public static void main(String[] args) {
 
-        System.out.println(parseInt(null));
-
+//        System.out.println(parseInt(null));
+        ddd();
 //        System.out.println(parseInt("-1") + " " + parseInt(null) + " " + parseInt("1"));
 //        System.out.println(parseInt("-1") + " " + parseInt(null) + " " + parseInt("1"));
 //        t1();
@@ -31,15 +31,20 @@ public class Test {
     public static void t1() {
         Object s = null;
         Integer i = (Integer) s;
-
-//        Integer dd = Integer.parseInt(null);
-
         if (s == null) {
             Integer aa = (Integer) s;
             System.err.println(aa);
         }
+    }
 
 
+    public static void ddd() {
+        String aa = "eature_tpl (2).json";
+//        aa = aa.replaceAll("\\s+", "").replaceAll("\\(", "").replaceAll("\\)", "");
+
+        aa =aa.substring(aa.lastIndexOf("."));
+
+        System.err.println(aa);
     }
 
 
