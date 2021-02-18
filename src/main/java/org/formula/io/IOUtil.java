@@ -13,9 +13,9 @@ import java.nio.ByteBuffer;
 import java.text.DecimalFormat;
 
 public class IOUtil {
+
     public static String getUserHomeResourcePath(String resName) {
         String p = System.getProperty("user.dir") + File.separator + resName;
-
         return p;
     }
 
@@ -124,5 +124,12 @@ public class IOUtil {
             e.printStackTrace();
         }
         return null;
+    }
+
+    public static void main(String[] args) {
+        String path = "";
+        String newPath = System.getProperty("user.dir");
+        newPath = getResourcePath("/system.properties");
+        System.err.println(newPath);
     }
 }
