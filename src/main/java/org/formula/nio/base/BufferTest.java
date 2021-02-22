@@ -1,4 +1,4 @@
-package org.formula.nio;
+package org.formula.nio.base;
 
 import java.nio.ByteBuffer;
 

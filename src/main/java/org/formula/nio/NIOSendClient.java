@@ -41,7 +41,7 @@ public class NIOSendClient {
                 //不断的自旋、等待，或者做一些其他的事情
             }
 
-            //发送文件名称
+            //文件名称
             ByteBuffer fileNameByteBuffer = charset.encode(destFile);
 
             ByteBuffer buffer = ByteBuffer.allocate(1024);
