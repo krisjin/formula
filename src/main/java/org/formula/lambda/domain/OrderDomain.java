@@ -4,7 +4,7 @@ package org.formula.lambda.domain;
 import lombok.Data;
 
 /**
- * User:krisibm@163.com
+ * User:krisin
  * Date:2018/12/30
  */
 @Data

@@ -1,7 +1,7 @@
 package org.formula.string;
 
 /**
- * @author krisibm@163.com on 2017/3/31
+ * @author krisin on 2017/3/31
  */
 public class StringOptimize {
 

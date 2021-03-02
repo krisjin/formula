@@ -5,6 +5,9 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * 测试集合中存储的对象去重，重写hashcode 和 equal方法
+ */
 public class ListObjectRepeatTest {
     public static void main(String[] args) {
         User user1 = new User("zhangsan", 11);
@@ -43,6 +46,4 @@ public class ListObjectRepeatTest {
         }
     }
 }
-
-
 

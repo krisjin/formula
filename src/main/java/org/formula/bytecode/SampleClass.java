@@ -3,10 +3,8 @@ package org.formula.bytecode;
 /**
  * User:krisjin
  * Date:2019/3/20
- *  
  */
 public class SampleClass {
-
     private String member;
     private static String staticMember;
 
@@ -23,7 +21,7 @@ public class SampleClass {
 
         System.out.println(i3 == i4);
 
-        System.out.println(2&2);
+        System.out.println(2 & 2);
 
     }
 }

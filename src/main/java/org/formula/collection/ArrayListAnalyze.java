@@ -12,7 +12,7 @@ import java.util.List;
  * 在查找元素时要遍历数组，对于非null的元素采用equals的方式寻找；
  * 3.ArrayList是非线程安全的。
  *
- * User: krisibm@163.com
+ * User: krisin
  * Date: 2016/10/19
  */
 public class ArrayListAnalyze {

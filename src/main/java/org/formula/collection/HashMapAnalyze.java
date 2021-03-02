@@ -9,7 +9,7 @@ import java.util.HashMap;
  * HashMap在插入元素时可能要扩大数组的容量，在扩大容量时须要重新计算hash，并复制对象到新的数组中。
  * <p/>
  * <p/>
- * User: krisibm@163.com
+ * User: krisin
  * Date: 2016/10/23
  */
 public class HashMapAnalyze extends HashMap {
