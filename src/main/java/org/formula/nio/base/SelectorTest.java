@@ -1,4 +1,4 @@
-package org.formula.nio;
+package org.formula.nio.base;
 
 import java.nio.channels.SelectionKey;
 
@@ -19,7 +19,5 @@ public class SelectorTest {
         int accept = SelectionKey.OP_ACCEPT;
         int read = SelectionKey.OP_READ;
         int write = SelectionKey.OP_WRITE;
-
-
     }
 }

@@ -1,4 +1,4 @@
-package org.formula.nio.discard;
+package org.formula.nio.discard.demo;
 
 
 import java.io.IOException;
