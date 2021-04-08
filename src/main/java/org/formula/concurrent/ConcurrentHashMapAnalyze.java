@@ -4,7 +4,6 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * ConcurrentHashMap 是线程安全的HashMap实现。
- * <p/>
  * User: krisin
  * Date: 2016/10/23
  */
